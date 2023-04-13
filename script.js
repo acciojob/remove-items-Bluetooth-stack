@@ -5,7 +5,7 @@ const button = document.querySelector("#btn");
 
 button.addEventListener("click",()=>{
 	if(drop.hasChildNodes()){
-		let child = drop.lastElementChild;
-		drop.removeChild(child);
+		let child = drop.selectedIndex;
+		drop.remove(child);
 	}
 })
